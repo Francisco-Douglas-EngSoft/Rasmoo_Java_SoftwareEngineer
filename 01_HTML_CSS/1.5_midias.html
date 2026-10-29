@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens, Vídeos e Áudios</title>
+</head>
+<body>
+    <h1>Imagens, Vídeos e Áudios em HTML</h1>
+
+    <h2>Imagens</h2>
+    <p>A tag <code>&lt;img&gt;</code> exibe uma imagem. O atributo <code>alt</code>
+        descreve seu conteúdo para leitores de tela e quando a imagem não carrega.</p>
+    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/flower.jpg"
+         alt="Flor rosa em destaque" width="300">
+
+    <h2>Vídeos</h2>
+    <p>A tag <code>&lt;video&gt;</code> pode oferecer controles para reproduzir,
+        pausar e ajustar o volume.</p>
+    <video controls width="480">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4">
+        Seu navegador não conseguiu reproduzir este vídeo.
+    </video>
+
+    <h2>Áudios</h2>
+    <p>A tag <code>&lt;audio&gt;</code> com <code>controls</code> permite controlar
+        a reprodução do som.</p>
+    <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+                type="audio/mpeg">
+        Seu navegador não conseguiu reproduzir este áudio.
+    </audio>
+</body>
+</html>

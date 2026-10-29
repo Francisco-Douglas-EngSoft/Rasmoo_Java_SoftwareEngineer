@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda propriedades de background em CSS com exemplos.">
+    <title>Backgrounds em CSS</title>
+    <link rel="stylesheet" href="1.13_backgrounds.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Backgrounds em CSS</h1>
+        <p>As propriedades de background definem o fundo de um elemento: podem aplicar
+            cores, imagens, controlar seu posicionamento e ajustar sua repetição.</p>
+
+        <section>
+            <h2>Cor de fundo</h2>
+            <p><code>background-color</code> aplica uma cor sólida ao fundo do elemento.</p>
+            <div class="exemplo cor-fundo">Fundo com cor sólida</div>
+            <pre><code>background-color: #dceeff;</code></pre>
+        </section>
+
+        <section>
+            <h2>Imagem de fundo</h2>
+            <p><code>background-image</code> aplica uma imagem. Neste exemplo, o
+                gradiente é criado em CSS, sem depender de um arquivo de imagem externo.</p>
+            <div class="exemplo imagem-fundo">Fundo com gradiente</div>
+            <pre><code>background-image: linear-gradient(120deg, #174a73, #64b5d8);</code></pre>
+        </section>
+
+        <section>
+            <h2>Tamanho e posicionamento</h2>
+            <p><code>background-size: cover</code> amplia o fundo para cobrir a área.
+                <code>background-position</code> define onde ele fica posicionado.</p>
+            <div class="exemplo tamanho-fundo">Gradiente centralizado e cobrindo o bloco</div>
+            <pre><code>background-size: cover;
+background-position: center;</code></pre>
+        </section>
+
+        <section>
+            <h2>Repetição e combinação</h2>
+            <p><code>background-repeat</code> define se a imagem se repete.
+                Também é possível combinar imagem e cor de fundo.</p>
+            <div class="exemplo repeticao-fundo">Padrão repetido criado com CSS</div>
+            <pre><code>background-repeat: repeat;
+background-color: #fff3df;</code></pre>
+        </section>
+    </main>
+</body>
+</html>

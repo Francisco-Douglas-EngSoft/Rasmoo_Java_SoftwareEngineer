@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda formas de definir cores em CSS.">
+    <title>Cores em CSS</title>
+    <link rel="stylesheet" href="1.11_cores.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cores em CSS</h1>
+        <p>As cores ajudam a destacar e organizar o conteúdo de uma página. Em CSS,
+            podemos defini-las de diferentes formas.</p>
+
+        <section>
+            <h2>Nome da cor</h2>
+            <p>Use nomes predefinidos, como <code>tomato</code>, <code>navy</code>
+                ou <code>seagreen</code>.</p>
+            <div class="amostra cor-nome">tomato</div>
+            <pre><code>color: tomato;</code></pre>
+        </section>
+
+        <section>
+            <h2>Hexadecimal</h2>
+            <p>O formato hexadecimal representa os canais vermelho, verde e azul
+                com valores de <code>00</code> a <code>FF</code>.</p>
+            <div class="amostra cor-hex">#3498DB</div>
+            <pre><code>background-color: #3498DB;</code></pre>
+        </section>
+
+        <section>
+            <h2>RGB e RGBA</h2>
+            <p><code>rgb()</code> define vermelho, verde e azul. <code>rgba()</code>
+                também permite definir a opacidade.</p>
+            <div class="amostra cor-rgb">rgb(46, 139, 87)</div>
+            <div class="amostra cor-rgba">rgba(46, 139, 87, 0.55)</div>
+            <pre><code>color: rgb(46, 139, 87);
+background-color: rgba(46, 139, 87, 0.55);</code></pre>
+        </section>
+
+        <section>
+            <h2>HSL e HSLA</h2>
+            <p><code>hsl()</code> define matiz, saturação e luminosidade.
+                <code>hsla()</code> também permite controlar a opacidade.</p>
+            <div class="amostra cor-hsl">hsl(280, 65%, 55%)</div>
+            <div class="amostra cor-hsla">hsla(280, 65%, 55%, 0.55)</div>
+            <pre><code>color: hsl(280, 65%, 55%);
+background-color: hsla(280, 65%, 55%, 0.55);</code></pre>
+        </section>
+
+        <section class="contraste">
+            <h2>Contraste e legibilidade</h2>
+            <p>Escolha combinações com contraste suficiente para que o texto seja
+                fácil de ler. Evite depender apenas da cor para transmitir informações.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introdução ao CSS e às três formas de aplicá-lo em documentos HTML.">
+    <title>Introdução ao CSS</title>
+    <link rel="stylesheet" href="1.9_css.css">
+    <style>
+        .estilo-interno {
+            color: #7a3e00;
+            background-color: #fff3df;
+            padding: 12px;
+            border-left: 4px solid #d9822b;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Introdução ao CSS</h1>
+        <p>CSS (Cascading Style Sheets, ou Folhas de Estilo em Cascata) é a linguagem
+            usada para definir a apresentação de páginas HTML, como cores, fontes,
+            espaçamentos e posicionamento dos elementos.</p>
+
+        <h2>1. CSS inline</h2>
+        <p>O CSS inline é escrito no atributo <code>style</code> do próprio elemento.
+            É útil para uma demonstração pontual, mas difícil de manter quando aplicado
+            em muitos elementos.</p>
+        <p style="color: #176b3a; background-color: #e8f5ec; padding: 12px; border-left: 4px solid #23864a;">
+            Este parágrafo usa CSS inline.
+        </p>
+        <p><code>&lt;p style="color: green;"&gt;Texto&lt;/p&gt;</code></p>
+
+        <h2>2. CSS interno</h2>
+        <p>O CSS interno fica dentro de uma tag <code>&lt;style&gt;</code> no
+            <code>&lt;head&gt;</code> do documento. Ele pode estilizar vários elementos
+            desta página.</p>
+        <p class="estilo-interno">Este parágrafo usa a classe definida no CSS interno.</p>
+
+        <h2>3. CSS externo</h2>
+        <p>O CSS externo fica em um arquivo separado e é conectado ao HTML com
+            <code>&lt;link rel="stylesheet" href="1.9_css.css"&gt;</code>.
+            Essa forma facilita a reutilização e a manutenção dos estilos.</p>
+        <section class="exemplo-externo">
+            <h3>Estilo carregado de um arquivo CSS</h3>
+            <p>Este bloco recebe estilos do arquivo <code>1.9_css.css</code>.</p>
+        </section>
+    </main>
+</body>
+</html>

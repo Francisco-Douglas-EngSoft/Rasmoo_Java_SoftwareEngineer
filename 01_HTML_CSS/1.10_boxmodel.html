@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda as partes do box model do CSS com exemplos.">
+    <title>Box Model do CSS</title>
+    <link rel="stylesheet" href="1.10_boxmodel.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Box Model do CSS</h1>
+        <p>No CSS, cada elemento é representado como uma caixa. O box model descreve
+            como o tamanho e o espaço dessa caixa são calculados.</p>
+
+        <div class="diagrama">
+            <span class="rotulo">MARGEM</span>
+            <div class="diagrama-borda">
+                <span class="rotulo">BORDA</span>
+                <div class="diagrama-padding">
+                    <span class="rotulo">PADDING</span>
+                    <div class="diagrama-conteudo">
+                        <div class="conteudo">CONTEÚDO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>As quatro partes da caixa</h2>
+        <ul>
+            <li><strong>Conteúdo:</strong> texto, imagem ou outros elementos. As propriedades
+                <code>width</code> e <code>height</code> definem suas dimensões.</li>
+            <li><strong>Padding:</strong> espaço entre o conteúdo e a borda.</li>
+            <li><strong>Border:</strong> contorno ao redor do conteúdo e do padding.</li>
+            <li><strong>Margin:</strong> espaço externo que separa a caixa de outros elementos.</li>
+        </ul>
+
+        <h2>Exemplo de cálculo</h2>
+        <p>Com o padrão <code>box-sizing: content-box</code>, uma caixa com largura
+            de conteúdo de 200px, padding de 20px em cada lado e borda de 4px em cada
+            lado ocupa 248px no total:</p>
+        <p class="formula">200px + 20px + 20px + 4px + 4px = 248px</p>
+
+        <h2>Usando border-box</h2>
+        <p>Com <code>box-sizing: border-box</code>, a largura definida já inclui
+            conteúdo, padding e borda. A caixa abaixo tem 200px de largura total:</p>
+        <div class="caixa-content-box">content-box: largura total 248px</div>
+        <div class="caixa-border-box">border-box: largura total 200px</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda propriedades básicas de fontes e tipografia em CSS.">
+    <title>Fontes e Tipografia em CSS</title>
+    <link rel="stylesheet" href="1.12_fontesTipografia.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Fontes e Tipografia em CSS</h1>
+        <p>Tipografia é a forma como o texto é apresentado. No CSS, propriedades
+            tipográficas ajudam a tornar o conteúdo legível e a criar hierarquia visual.</p>
+
+        <section>
+            <h2>Família tipográfica</h2>
+            <p>A propriedade <code>font-family</code> define a família da fonte.
+                Informe alternativas para o navegador usar caso a primeira não esteja disponível.</p>
+            <p class="exemplo-familia">Este texto usa uma família sem serifa, com alternativas de fonte.</p>
+            <pre><code>font-family: Arial, Helvetica, sans-serif;</code></pre>
+        </section>
+
+        <section>
+            <h2>Tamanho e peso</h2>
+            <p><code>font-size</code> controla o tamanho do texto. <code>font-weight</code>
+                controla o peso, como normal ou negrito.</p>
+            <p class="exemplo-tamanho">Texto maior para destacar um exemplo.</p>
+            <p class="exemplo-peso">Texto com peso mais forte.</p>
+            <pre><code>font-size: 1.25rem;
+font-weight: 700;</code></pre>
+        </section>
+
+        <section>
+            <h2>Estilo, altura da linha e alinhamento</h2>
+            <p><code>font-style</code> pode aplicar itálico. <code>line-height</code>
+                ajusta o espaço vertical entre linhas e <code>text-align</code>
+                controla o alinhamento do texto.</p>
+            <p class="exemplo-leitura">Uma altura de linha confortável ajuda na leitura de parágrafos longos. Este exemplo mostra como ajustar o espaço entre linhas e alinhar o texto.</p>
+            <p class="exemplo-italico">Este texto usa estilo itálico.</p>
+            <pre><code>line-height: 1.8;
+text-align: justify;
+font-style: italic;</code></pre>
+        </section>
+
+        <section>
+            <h2>Unidades para tamanho</h2>
+            <ul>
+                <li><code>px</code>: valor fixo em pixels.</li>
+                <li><code>em</code>: relativo ao tamanho da fonte do elemento pai.</li>
+                <li><code>rem</code>: relativo ao tamanho da fonte raiz do documento.</li>
+            </ul>
+            <p>Unidades relativas, como <code>rem</code>, facilitam a adaptação do texto às preferências de leitura.</p>
+        </section>
+    </main>
+</body>
+</html>

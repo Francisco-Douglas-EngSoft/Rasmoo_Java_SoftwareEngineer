@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+h1,
+h2 {
+    color: #174a73;
+}
+
+.diagrama {
+    margin: 24px 0;
+    padding: 24px;
+    background-color: #f7e3bd;
+}
+
+.diagrama-borda {
+    margin-top: 8px;
+    padding: 16px;
+    border: 8px solid #d9822b;
+    background-color: #cce5f2;
+    text-align: center;
+}
+
+.diagrama-padding {
+    padding: 16px;
+    background-color: #dcefdc;
+}
+
+.diagrama-conteudo {
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.rotulo {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.conteudo {
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #174a73;
+    background-color: #edf7fc;
+    font-weight: bold;
+}
+
+.formula {
+    padding: 12px;
+    background-color: #edf7fc;
+    font-family: monospace;
+}
+
+.caixa-content-box,
+.caixa-border-box {
+    width: 200px;
+    margin: 12px 0;
+    padding: 20px;
+    border: 4px solid #174a73;
+    background-color: #cce5f2;
+}
+
+.caixa-content-box {
+    box-sizing: content-box;
+}
+
+.caixa-border-box {
+    box-sizing: border-box;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Navegação</title>
+</head>
+<body>
+    <header>
+        <h1 id="topo">Links e Navegação em HTML</h1>
+        <nav aria-label="Navegação principal">
+            <a href="#links-internos">Links internos</a>
+            <a href="#links-externos">Links externos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="links-internos">
+            <h2>Links internos</h2>
+            <p>
+                Um link pode levar a outra página do mesmo site, como a
+                <a href="1.2_tagsBasicas.html">página de tags básicas</a>.
+            </p>
+            <p>
+                Também é possível navegar até uma seção desta página usando um fragmento,
+                como <a href="#contato">ir para contato</a>.
+            </p>
+        </section>
+
+        <section id="links-externos">
+            <h2>Links externos</h2>
+            <p>
+                Para acessar outro site, informe o endereço completo:
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                    Documentação HTML da MDN
+                </a>.
+            </p>
+            <p>
+                Para abrir um link em outra aba, use
+                <code>target="_blank"</code> junto com
+                <code>rel="noopener noreferrer"</code>:
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                   target="_blank" rel="noopener noreferrer">abrir a MDN em outra aba</a>.
+            </p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p><a href="mailto:contato@example.com">Enviar um e-mail</a></p>
+            <p><a href="#topo">Voltar ao início</a></p>
+        </section>
+    </main>
+</body>
+</html>

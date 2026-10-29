@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs, Containers e Classes</title>
+    <style>
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        .card {
+            margin-bottom: 12px;
+            padding: 12px;
+            border: 1px solid #999;
+        }
+
+        .destaque {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Divs, Containers e Classes</h1>
+        <p>A tag <code>&lt;div&gt;</code> agrupa elementos sem adicionar significado
+            semântico. Classes permitem identificar e estilizar grupos reutilizáveis.</p>
+
+        <div class="card">
+            <h2 class="destaque">Primeiro bloco</h2>
+            <p>Este conteúdo está agrupado em uma div com a classe <code>card</code>.</p>
+        </div>
+
+        <div class="card">
+            <h2 class="destaque">Segundo bloco</h2>
+            <p>As classes <code>card</code> e <code>destaque</code> podem ser usadas
+                em vários elementos.</p>
+        </div>
+
+        <section>
+            <h2>Quando usar cada elemento?</h2>
+            <p>Use <code>&lt;div&gt;</code> para agrupamentos genéricos e prefira
+                elementos semânticos, como <code>&lt;section&gt;</code> e
+                <code>&lt;main&gt;</code>, quando eles descrevem melhor o conteúdo.</p>
+        </section>
+    </main>
+</body>
+</html>
