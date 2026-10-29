@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda pseudoclasses CSS com exemplos de links, formulários e elementos.">
+    <title>Pseudoclasses em CSS</title>
+    <link rel="stylesheet" href="1.17_pseudoClasses.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Pseudoclasses em CSS</h1>
+        <p>Pseudoclasses selecionam elementos com base em seu estado ou posição,
+            sem precisar adicionar classes manualmente no HTML. Elas começam com
+            dois-pontos, como <code>:hover</code>.</p>
+
+        <section>
+            <h2>Estados de links e interação</h2>
+            <p>Experimente passar o cursor ou usar o teclado para focar o link.
+                As pseudoclasses <code>:hover</code> e <code>:focus</code> indicam
+                esses estados.</p>
+            <a class="link-exemplo" href="#formulario">Passe o cursor ou navegue até este link</a>
+            <p><code>:visited</code> seleciona links já visitados e <code>:active</code>
+                se aplica enquanto o link está sendo ativado.</p>
+        </section>
+
+        <section>
+            <h2>Elementos em uma lista</h2>
+            <p><code>:first-child</code>, <code>:last-child</code> e
+                <code>:nth-child()</code> selecionam elementos de acordo com sua posição.</p>
+            <ul class="lista-exemplo">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+                <li>Quarto item</li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2>Estados de formulário</h2>
+            <p><code>:focus</code> destaca o campo ativo e <code>:checked</code>
+                seleciona um controle marcado.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite seu nome">
+
+                <label class="opcao">
+                    <input type="checkbox" name="aceite">
+                    Aceito participar do exemplo
+                </label>
+
+                <button type="button">Botão de exemplo</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Selecionando elementos disponíveis</h2>
+            <p>A pseudoclasse <code>:not()</code> seleciona elementos que não correspondem
+                ao seletor informado.</p>
+            <div class="cartoes">
+                <div class="cartao">Cartão padrão</div>
+                <div class="cartao destaque">Cartão com destaque</div>
+                <div class="cartao">Outro cartão padrão</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

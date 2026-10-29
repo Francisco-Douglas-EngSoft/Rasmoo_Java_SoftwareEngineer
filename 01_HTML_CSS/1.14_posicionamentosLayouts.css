@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: 24px;
+    background-color: #174a73;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+h2 {
+    color: #174a73;
+}
+
+section {
+    margin-bottom: 36px;
+}
+
+.exemplo-posicoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.cartao {
+    min-height: 190px;
+    padding: 16px;
+    border: 1px solid #b8cbd8;
+    border-radius: 6px;
+    background-color: #f7fbfd;
+}
+
+.cartao h3 {
+    margin-top: 0;
+    color: #174a73;
+}
+
+.posicao-relative {
+    top: 12px;
+    left: 12px;
+    background-color: #edf7fc;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: #dceeff;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.area-posicionada {
+    position: relative;
+    min-height: 48px;
+    margin-top: 12px;
+    border: 1px dashed #8ca9ba;
+    background-color: #ffffff;
+}
+
+.marcador-absoluto {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 3px 6px;
+    background-color: #dceeff;
+    font-size: 0.8rem;
+}
+
+.area-rolagem {
+    max-height: 120px;
+    overflow-y: auto;
+    border: 1px solid #b8cbd8;
+    background-color: #ffffff;
+}
+
+.area-rolagem p {
+    padding: 0 12px;
+}
+
+.barra-sticky {
+    position: sticky;
+    top: 0;
+    padding: 8px 12px;
+    background-color: #dceeff;
+    font-weight: bold;
+}
+
+.nota {
+    margin-top: 24px;
+    padding: 12px;
+    border-left: 4px solid #d9822b;
+    background-color: #fff3df;
+}
+
+.exemplo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #b8cbd8;
+    background-color: #f7fbfd;
+}
+
+.exemplo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #b8cbd8;
+    background-color: #f7fbfd;
+}
+
+.item-layout {
+    padding: 16px;
+    background-color: #dceeff;
+    text-align: center;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 12px;
+    background-color: #edf2f5;
+}
+
+@media (max-width: 520px) {
+    .exemplo-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

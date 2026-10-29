@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+h1,
+h2 {
+    color: #174a73;
+}
+
+section {
+    margin: 28px 0;
+}
+
+.grade {
+    display: grid;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #b8cbd8;
+    background-color: #f7fbfd;
+}
+
+.grade-colunas {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grade-responsiva {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.grade-posicionada {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    padding: 20px 12px;
+    background-color: #dceeff;
+    text-align: center;
+}
+
+.item-destaque {
+    grid-column: span 2;
+    background-color: #c4e3f5;
+}
+
+.grade-areas {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "lateral conteudo"
+        "rodape rodape";
+}
+
+.area-cabecalho {
+    grid-area: cabecalho;
+}
+
+.area-menu {
+    grid-area: menu;
+}
+
+.area-conteudo {
+    grid-area: conteudo;
+    min-height: 120px;
+}
+
+.area-lateral {
+    grid-area: lateral;
+}
+
+.area-rodape {
+    grid-area: rodape;
+}
+
+.area-cabecalho,
+.area-menu,
+.area-conteudo,
+.area-lateral,
+.area-rodape {
+    padding: 16px;
+    background-color: #dceeff;
+    text-align: center;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 12px;
+    background-color: #edf2f5;
+}
+
+@media (max-width: 520px) {
+    .grade-colunas,
+    .grade-posicionada {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grade-areas {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "lateral"
+            "rodape";
+    }
+}

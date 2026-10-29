@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+h1,
+h2 {
+    color: #174a73;
+}
+
+section {
+    margin: 28px 0;
+}
+
+.link-exemplo {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #174a73;
+}
+
+.link-exemplo:visited {
+    color: #7040a0;
+}
+
+.link-exemplo:hover {
+    background-color: #dceeff;
+    text-decoration: none;
+}
+
+.link-exemplo:focus-visible,
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #d9822b;
+    outline-offset: 3px;
+}
+
+.link-exemplo:active {
+    color: #a33b2f;
+}
+
+.lista-exemplo {
+    padding-left: 32px;
+}
+
+.lista-exemplo li {
+    padding: 8px;
+}
+
+.lista-exemplo li:first-child {
+    font-weight: bold;
+}
+
+.lista-exemplo li:last-child {
+    border-bottom: 2px solid #174a73;
+}
+
+.lista-exemplo li:nth-child(even) {
+    background-color: #edf7fc;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 420px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #8ca9ba;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.opcao input:checked {
+    accent-color: #174a73;
+}
+
+button {
+    justify-self: start;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #174a73;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e3452;
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cartao {
+    flex: 1 1 160px;
+    padding: 16px;
+    border: 1px solid #b8cbd8;
+    border-radius: 4px;
+    background-color: #f7fbfd;
+}
+
+.cartao:not(.destaque) {
+    border-left: 4px solid #64b5d8;
+}
+
+.cartao.destaque {
+    background-color: #fff3df;
+}

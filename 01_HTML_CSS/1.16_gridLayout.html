@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda CSS Grid Layout com exemplos de linhas, colunas e áreas.">
+    <title>Grid Layout em CSS</title>
+    <link rel="stylesheet" href="1.16_gridLayout.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Grid Layout em CSS</h1>
+        <p>CSS Grid é um sistema de layout bidimensional: permite organizar elementos
+            em linhas e colunas ao mesmo tempo.</p>
+
+        <section>
+            <h2>Definindo colunas e espaçamento</h2>
+            <p><code>grid-template-columns</code> define as colunas e <code>gap</code>
+                cria espaço entre as células.</p>
+            <div class="grade grade-colunas">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+            <pre><code>display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 12px;</code></pre>
+        </section>
+
+        <section>
+            <h2>Colunas responsivas</h2>
+            <p><code>minmax()</code> define o tamanho mínimo e máximo das colunas.
+                Com <code>auto-fit</code>, o Grid adapta a quantidade de colunas ao espaço disponível.</p>
+            <div class="grade grade-responsiva">
+                <div class="item">Card 1</div>
+                <div class="item">Card 2</div>
+                <div class="item">Card 3</div>
+                <div class="item">Card 4</div>
+            </div>
+            <pre><code>grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));</code></pre>
+        </section>
+
+        <section>
+            <h2>Posicionando itens</h2>
+            <p>Um item pode ocupar mais de uma coluna ou linha com
+                <code>grid-column</code> e <code>grid-row</code>.</p>
+            <div class="grade grade-posicionada">
+                <div class="item item-destaque">Item que ocupa duas colunas</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+            <pre><code>grid-column: span 2;</code></pre>
+        </section>
+
+        <section>
+            <h2>Áreas do layout</h2>
+            <p><code>grid-template-areas</code> nomeia regiões para montar layouts
+                de forma clara.</p>
+            <div class="grade grade-areas">
+                <header class="area-cabecalho">Cabeçalho</header>
+                <nav class="area-menu">Menu</nav>
+                <article class="area-conteudo">Conteúdo principal</article>
+                <aside class="area-lateral">Barra lateral</aside>
+                <footer class="area-rodape">Rodapé</footer>
+            </div>
+            <pre><code>grid-template-areas:
+    "cabecalho cabecalho"
+    "menu conteudo"
+    "lateral conteudo"
+    "rodape rodape";</code></pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda os principais conceitos do Flexbox com exemplos.">
+    <title>Flexbox em CSS</title>
+    <link rel="stylesheet" href="1.15_flexbox.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Flexbox em CSS</h1>
+        <p>Flexbox é um modelo de layout unidimensional. Ele organiza itens em uma linha
+            ou coluna e facilita o alinhamento e a distribuição do espaço.</p>
+
+        <section>
+            <h2>Eixos e direção</h2>
+            <p>O eixo principal é definido por <code>flex-direction</code>. O eixo
+                transversal fica perpendicular ao principal.</p>
+            <div class="flex-direcao">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+            <pre><code>display: flex;
+flex-direction: row;</code></pre>
+        </section>
+
+        <section>
+            <h2>Justificar e alinhar</h2>
+            <p><code>justify-content</code> distribui itens no eixo principal.
+                <code>align-items</code> alinha os itens no eixo transversal.</p>
+            <div class="flex-alinhamento">
+                <div class="item">Item A</div>
+                <div class="item item-alto">Item B</div>
+                <div class="item">Item C</div>
+            </div>
+            <pre><code>justify-content: space-around;
+align-items: center;</code></pre>
+        </section>
+
+        <section>
+            <h2>Espaçamento com gap</h2>
+            <p>A propriedade <code>gap</code> cria espaço entre os itens, sem precisar
+                adicionar margens individuais.</p>
+            <div class="flex-gap">
+                <div class="item">HTML</div>
+                <div class="item">CSS</div>
+                <div class="item">JavaScript</div>
+            </div>
+            <pre><code>display: flex;
+gap: 16px;</code></pre>
+        </section>
+
+        <section>
+            <h2>Quebra de linha</h2>
+            <p>Com <code>flex-wrap: wrap</code>, os itens passam para outra linha quando
+                não há espaço suficiente no contêiner.</p>
+            <div class="flex-wrap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+            <pre><code>display: flex;
+flex-wrap: wrap;
+gap: 12px;</code></pre>
+        </section>
+
+        <section>
+            <h2>Propriedades dos itens</h2>
+            <p>Itens podem crescer ou encolher com <code>flex-grow</code> e
+                <code>flex-shrink</code>. A propriedade <code>flex</code> é uma forma
+                abreviada de configurar esses comportamentos e a base do item.</p>
+            <div class="flex-itens">
+                <div class="item item-flex">Cresce para ocupar o espaço disponível</div>
+                <div class="item">Tamanho automático</div>
+            </div>
+            <pre><code>.item-destacado {
+    flex: 1;
+}</code></pre>
+        </section>
+    </main>
+</body>
+</html>

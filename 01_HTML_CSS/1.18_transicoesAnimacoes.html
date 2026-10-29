@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda transições e animações CSS com exemplos.">
+    <title>Transições e Animações em CSS</title>
+    <link rel="stylesheet" href="1.18_transicoesAnimacoes.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Transições e Animações em CSS</h1>
+        <p>Transições e animações acrescentam movimento aos elementos. Use-as com
+            moderação para dar retorno visual sem atrapalhar a leitura ou a navegação.</p>
+
+        <section>
+            <h2>Transições</h2>
+            <p>Uma transição suaviza a mudança de uma propriedade quando ocorre um
+                estado, como passar o cursor ou focar um botão.</p>
+            <button class="botao-transicao" type="button">Passe o cursor ou foque</button>
+            <pre><code>transition: background-color 0.3s ease, transform 0.3s ease;</code></pre>
+        </section>
+
+        <section>
+            <h2>Animações com keyframes</h2>
+            <p><code>@keyframes</code> define etapas de uma animação. A propriedade
+                <code>animation</code> configura sua duração, repetição e outros detalhes.</p>
+            <div class="area-animacao">
+                <div class="caixa-animada">Animação</div>
+            </div>
+            <pre><code>@keyframes deslizar {
+    from { transform: translateX(0); }
+                to { transform: translateX(min(180px, calc(100vw - 240px))); }
+}
+
+animation: deslizar 2s ease-in-out infinite alternate;</code></pre>
+        </section>
+
+        <section>
+            <h2>Respeito à preferência por movimento reduzido</h2>
+            <p>Algumas pessoas preferem menos movimento. A consulta
+                <code>prefers-reduced-motion</code> permite reduzir ou remover animações
+                conforme a configuração do sistema.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda conceitos de design responsivo com exemplos de CSS.">
+    <title>Responsividade em CSS</title>
+    <link rel="stylesheet" href="1.19_responsividade.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Responsividade em CSS</h1>
+        <p>Uma página responsiva se adapta a diferentes tamanhos de tela e dispositivos.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>O que é responsividade?</h2>
+            <p>Design responsivo organiza o conteúdo para que ele continue legível e
+                utilizável em celulares, tablets e computadores. O viewport configurado
+                no <code>&lt;head&gt;</code> permite que a página use a largura real do dispositivo.</p>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Layout flexível</h2>
+            <p>Contêineres fluidos e unidades relativas ajudam o conteúdo a acompanhar
+                o espaço disponível, em vez de depender de uma largura fixa.</p>
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>Conteúdo adaptável</h3>
+                    <p>Este cartão se ajusta à largura do contêiner.</p>
+                </article>
+                <article class="cartao">
+                    <h3>Espaçamento fluido</h3>
+                    <p>O layout reorganiza os cartões conforme o espaço disponível.</p>
+                </article>
+                <article class="cartao">
+                    <h3>Leitura confortável</h3>
+                    <p>O conteúdo mantém limites de largura para facilitar a leitura.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Imagens flexíveis</h2>
+            <p>Use <code>max-width: 100%</code> para impedir que imagens ultrapassem
+                os limites do contêiner.</p>
+            <div class="imagem-exemplo" role="img" aria-label="Ilustração de uma paisagem responsiva">
+                Paisagem responsiva
+            </div>
+        </section>
+
+        <section>
+            <h2>Media queries</h2>
+            <p>Media queries aplicam estilos conforme características da tela. Reduza
+                a largura da janela para ver os cartões em uma única coluna.</p>
+            <pre><code>@media (max-width: 600px) {
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+        </section>
+    </main>
+</body>
+</html>

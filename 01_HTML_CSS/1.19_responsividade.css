@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #252a34;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: clamp(24px, 5vw, 48px) 20px;
+    background-color: #174a73;
+    color: #ffffff;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin-top: 0;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.container {
+    width: min(100% - 32px, 900px);
+    margin: 0 auto;
+    padding: clamp(16px, 4vw, 32px);
+    background-color: #ffffff;
+}
+
+h2 {
+    color: #174a73;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 16px;
+}
+
+.cartao {
+    padding: 18px;
+    border: 1px solid #b8cbd8;
+    border-radius: 6px;
+    background-color: #f7fbfd;
+}
+
+.cartao h3 {
+    margin-top: 0;
+    color: #174a73;
+}
+
+.imagem-exemplo {
+    display: grid;
+    width: 100%;
+    max-width: 640px;
+    min-height: 180px;
+    place-items: center;
+    border-radius: 6px;
+    background: linear-gradient(160deg, #9bd5ed 0 55%, #5b9b66 55% 100%);
+    color: #16384a;
+    font-weight: bold;
+    text-align: center;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 12px;
+    background-color: #edf2f5;
+}
+
+@media (max-width: 600px) {
+    .cabecalho p {
+        max-width: 32rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+}

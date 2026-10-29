@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Aprenda posicionamento e layouts com CSS.">
+    <title>Posicionamento e Layout em CSS</title>
+    <link rel="stylesheet" href="1.14_posicionamentosLayouts.css">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1>Posicionamento e Layout em CSS</h1>
+        <p>Veja como posicionar elementos e organizar conteúdo com Flexbox e Grid.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Position</h2>
+            <p>A propriedade <code>position</code> define como um elemento participa
+                do fluxo da página e como pode ser deslocado.</p>
+
+            <div class="exemplo-posicoes">
+                <article class="cartao posicao-static">
+                    <h3>static</h3>
+                    <p>É o posicionamento padrão. O elemento segue o fluxo normal do documento.</p>
+                </article>
+
+                <article class="cartao posicao-relative">
+                    <span class="etiqueta">top: 12px; left: 12px</span>
+                    <h3>relative</h3>
+                    <p>Permanece no fluxo, mas pode ser deslocado em relação à posição original.</p>
+                </article>
+
+                <article class="cartao posicao-absolute">
+                    <span class="etiqueta">position: absolute</span>
+                    <h3>absolute</h3>
+                    <p>É posicionado em relação ao ancestral mais próximo que tenha position diferente de static.</p>
+                    <div class="area-posicionada">
+                        <span class="marcador-absoluto">Elemento absolute</span>
+                    </div>
+                </article>
+
+                <article class="cartao posicao-sticky">
+                    <h3>sticky</h3>
+                    <p>Fica no fluxo normal e pode permanecer preso ao topo durante a rolagem da área.</p>
+                    <div class="area-rolagem">
+                        <div class="barra-sticky">Cabeçalho sticky (top: 0)</div>
+                        <p>Conteúdo da área rolável.</p>
+                        <p>Continue rolando para observar o cabeçalho.</p>
+                        <p>Fim da área de demonstração.</p>
+                    </div>
+                </article>
+            </div>
+
+            <p class="nota">O posicionamento <code>fixed</code> ancora o elemento à janela
+                do navegador, mesmo durante a rolagem. É comum em controles persistentes;
+                evite usá-lo para conteúdo que possa cobrir informações importantes.</p>
+            <pre><code>position: relative;
+top: 12px;
+left: 12px;</code></pre>
+        </section>
+
+        <section>
+            <h2>Flexbox</h2>
+            <p>Flexbox organiza elementos em uma dimensão: em linha ou em coluna.
+                É útil para alinhar itens e distribuir espaço.</p>
+            <div class="exemplo-flex">
+                <div class="item-layout">Item 1</div>
+                <div class="item-layout">Item 2</div>
+                <div class="item-layout">Item 3</div>
+            </div>
+            <pre><code>display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 12px;</code></pre>
+        </section>
+
+        <section>
+            <h2>CSS Grid</h2>
+            <p>Grid organiza elementos em duas dimensões, permitindo definir linhas e
+                colunas para criar layouts de página.</p>
+            <div class="exemplo-grid">
+                <div class="item-layout">Item 1</div>
+                <div class="item-layout">Item 2</div>
+                <div class="item-layout">Item 3</div>
+                <div class="item-layout">Item 4</div>
+            </div>
+            <pre><code>display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;</code></pre>
+        </section>
+    </main>
 </body>
 </html>
