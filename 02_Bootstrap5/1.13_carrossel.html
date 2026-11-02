@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel com Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .carousel-item {
+            min-height: 24rem;
+        }
+
+        .slide-um {
+            background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+        }
+
+        .slide-dois {
+            background: linear-gradient(135deg, #047857, #0ea5e9);
+        }
+
+        .slide-tres {
+            background: linear-gradient(135deg, #c2410c, #be185d);
+        }
+
+        .carousel-caption {
+            right: 12%;
+            bottom: 4rem;
+            left: 12%;
+        }
+
+        @media (max-width: 575.98px) {
+            .carousel-item {
+                min-height: 27rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container py-5">
+        <header class="mb-5">
+            <p class="text-primary fw-bold text-uppercase small mb-2">Bootstrap 5</p>
+            <h1 class="display-5 fw-bold">Carrossel</h1>
+            <p class="lead text-muted mb-0">Apresente conteúdos em sequência com indicadores e controles de navegação.</p>
+        </header>
+
+        <section aria-labelledby="exemplo-carrossel">
+            <h2 id="exemplo-carrossel" class="h4 mb-3">Exemplo interativo</h2>
+            <div id="carrosselAula" class="carousel slide" aria-label="Destaques da aula">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrosselAula" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Ir para o slide 1"></button>
+                    <button type="button" data-bs-target="#carrosselAula" data-bs-slide-to="1"
+                        aria-label="Ir para o slide 2"></button>
+                    <button type="button" data-bs-target="#carrosselAula" data-bs-slide-to="2"
+                        aria-label="Ir para o slide 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active slide-um">
+                        <div class="carousel-caption text-start">
+                            <span class="badge bg-light text-primary mb-2">Slide 1</span>
+                            <h3 class="display-6 fw-bold">Apresente suas ideias</h3>
+                            <p class="fs-5">Use cada slide para destacar uma mensagem importante.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide-dois">
+                        <div class="carousel-caption">
+                            <span class="badge bg-light text-success mb-2">Slide 2</span>
+                            <h3 class="display-6 fw-bold">Organize o conteúdo</h3>
+                            <p class="fs-5">Títulos e textos curtos ajudam a manter o foco.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide-tres">
+                        <div class="carousel-caption text-end">
+                            <span class="badge bg-light text-danger mb-2">Slide 3</span>
+                            <h3 class="display-6 fw-bold">Navegue com facilidade</h3>
+                            <p class="fs-5">Os controles permitem avançar, voltar ou escolher um slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAula" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Slide anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselAula" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo slide</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="mt-5" aria-labelledby="classes-carrossel">
+            <h2 id="classes-carrossel" class="h4">Classes usadas</h2>
+            <p class="text-muted mb-0">
+                <code>.carousel</code> cria o componente, <code>.carousel-inner</code> agrupa os slides,
+                <code>.carousel-item</code> representa cada slide e os atributos
+                <code>data-bs-slide</code> e <code>data-bs-slide-to</code> conectam os controles.
+            </p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

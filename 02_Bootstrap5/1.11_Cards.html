@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards com Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container py-5">
+        <header class="mb-5">
+            <p class="text-primary fw-bold text-uppercase small mb-2">Bootstrap 5</p>
+            <h1 class="display-5 fw-bold">Cards</h1>
+            <p class="lead text-muted mb-0">Combine conteúdo e ações em blocos flexíveis e responsivos.</p>
+        </header>
+
+        <section aria-labelledby="exemplos">
+            <h2 id="exemplos" class="h4 mb-3">Exemplos de cards</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <span class="display-4" aria-hidden="true">💻</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Desenvolvimento</span>
+                            <h3 class="card-title h5">Aprenda Bootstrap</h3>
+                            <p class="card-text">Crie interfaces responsivas usando componentes e classes utilitárias.</p>
+                            <a href="#estrutura" class="btn btn-primary">Ver estrutura</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100">
+                        <div class="card-header">Dica da aula</div>
+                        <div class="card-body">
+                            <h3 class="card-title h5">Organize seu conteúdo</h3>
+                            <p class="card-text">O corpo do card agrupa títulos, textos e ações em um espaço consistente.</p>
+                            <a href="#lista" class="card-link">Conheça outro exemplo</a>
+                        </div>
+                        <div class="card-footer text-muted">Atualizado hoje</div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article id="lista" class="card h-100">
+                        <h3 class="card-header h5 mb-0">Tópicos</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Estrutura com .card</li>
+                            <li class="list-group-item">Conteúdo com .card-body</li>
+                            <li class="list-group-item">Ações com botões e links</li>
+                        </ul>
+                        <div class="card-body">
+                            <p class="card-text mb-0">Combine elementos para atender ao conteúdo da sua página.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="estrutura" class="mt-5" aria-labelledby="como-usar">
+            <h2 id="como-usar" class="h4">Como montar um card</h2>
+            <p class="text-muted mb-0">
+                Use <code>.card</code> como contêiner, <code>.card-body</code> para o conteúdo,
+                <code>.card-title</code> para o título e <code>.card-text</code> para o texto.
+                As classes <code>.card-header</code> e <code>.card-footer</code> são opcionais.
+            </p>
+        </section>
+    </main>
+</body>
+</html>

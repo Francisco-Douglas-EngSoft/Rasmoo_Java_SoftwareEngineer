@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas com Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container py-5">
+        <header class="mb-5">
+            <p class="text-primary fw-bold text-uppercase small mb-2">Bootstrap 5</p>
+            <h1 class="display-5 fw-bold">Alertas</h1>
+            <p class="lead text-muted mb-0">Use alertas para apresentar mensagens importantes ao usuário.</p>
+        </header>
+
+        <section class="mb-5" aria-labelledby="variantes">
+            <h2 id="variantes" class="h4 mb-3">Cores e significados</h2>
+            <div class="alert alert-primary" role="alert">Mensagem informativa: confira as novidades da página.</div>
+            <div class="alert alert-success" role="alert">Sucesso! Sua alteração foi salva.</div>
+            <div class="alert alert-warning" role="alert">Atenção: revise os dados antes de continuar.</div>
+            <div class="alert alert-danger" role="alert">Erro: não foi possível concluir a operação.</div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="conteudo">
+            <h2 id="conteudo" class="h4 mb-3">Título, texto e link</h2>
+            <div class="alert alert-info" role="alert">
+                <h3 class="alert-heading h5">Dica importante</h3>
+                <p>Você pode combinar um título com uma mensagem para destacar informações úteis.</p>
+                <hr>
+                <p class="mb-0">Acesse a <a href="#variantes" class="alert-link">seção de exemplos</a> para rever as variantes.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="dispensavel">
+            <h2 id="dispensavel" class="h4 mb-3">Alerta dispensável</h2>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Este alerta pode ser fechado pelo usuário.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+            </div>
+            <p class="text-muted small mb-0">O botão de fechar usa o JavaScript do Bootstrap para dispensar o alerta.</p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
